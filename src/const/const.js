@@ -1,14 +1,33 @@
+
 export const studies = [
- 
-  {
-    title: "Licence en Informatique",
-    corporation: "Université de Lille",
-    date: "09/2019 – 09/2023",
-  },
   {
     title: "Msc Expert informatique et Systèmes d'information ",
     corporation: "EPSI LILLE",
     date: "09/2023 – à ce jour",
+    src:"https://sarcdprodstrapi.blob.core.windows.net/strapi-media/assets/logo_epsi_8b6f0271b8.png"
+  },
+  {
+    title: "Licence en Informatique",
+    corporation: "Université de Lille",
+    date: "09/2019 – 09/2023",
+    src: "https://www.univ-lille.fr/fileadmin/_processed_/0/b/csm_Logo.sans.baseline-Horizontal-CMJN-Noir_12d07ae56a.png"
+  },
+  
+];
+
+export const work = [
+ 
+  {
+    title: "Alternance",
+    corporation: "Eviden/Atos",
+    date: "09/2023 – à ce jour",
+    src: "https://i0.wp.com/id4africaevents.com/wp-content/uploads/2023/11/Eviden-an-atos-business-orange-RGB.png?fit=1024%2C447&ssl=1"
+  },
+  {
+    title: "Stage de Fin de Cycle ",
+    corporation: "Vade/HORNETSECURITY",
+    date: "04/2023 – 08/2023",
+    src:"https://www.vadesecure.com/hubfs/hse_vade_logo_web__02.png"
   },
 ];
 
@@ -34,7 +53,24 @@ export const IconKeys = {
   nodejs: "nodejs",
   mongodb: "mongodb",
   vite: "vite",
-  nest:"nest"
+  nestjs:"nestjs",
+  angular:"angular",
+  vuetify:"vuetfy",
+  python:"python",
+  php:"php",
+  docker:"docker",
+  expressjs:"expressjs",
+  java:"java",
+  jest:"jest",
+  postgresql:"postgresql",
+  vuejs:"vuejs",
+  mysql:"mysql",
+  prisma:"prisma",
+  sonarqube:"sonarqube",
+  symfony:"symfony",
+  storybook:"storybook",
+  figma:"figma"
+
   
 };
 
@@ -49,11 +85,28 @@ export const skills = [
   },
   {
     title: "JavaScript",
-    icon: IconKeys.nest,
+    icon: IconKeys.javaScript,
   },
   {
-    title: "Astro",
-    icon: IconKeys.astro,
+    title: "Java",
+    icon: IconKeys.java,
+  },
+  {
+    title: "Python",
+    icon: IconKeys.python,
+  },
+  {
+    title: "Php",
+    icon: IconKeys.php,
+  },
+  {
+    title: "Symfony",
+    icon: IconKeys.symfony,
+  },
+
+  {
+    title: "Nest Js",
+    icon: IconKeys.nestjs,
   },
   {
     title: "Tailwindcss",
@@ -68,6 +121,14 @@ export const skills = [
     icon: IconKeys.nextjs,
   },
   {
+    title: "Vue Js",
+    icon: IconKeys.vuejs,
+  },
+  {
+    title: "Angular",
+    icon: IconKeys.angular,
+  },
+  {
     title: "Git",
     icon: IconKeys.git,
   },
@@ -76,22 +137,18 @@ export const skills = [
     title: "Github",
     icon: IconKeys.github,
   },
-  {
-    title: "Material UI",
-    icon: IconKeys.materialUi,
-  },
 
   {
     title: "Redux Js",
     icon: IconKeys.redux,
   },
   {
-    title: "Styled Components",
-    icon: IconKeys.styled,
-  },
-  {
     title: "Node Js",
     icon: IconKeys.nodejs,
+  },
+  {
+    title: "Express Js",
+    icon: IconKeys.expressjs,
   },
   {
     title: "TypeScript",
@@ -101,18 +158,13 @@ export const skills = [
     title: "Radix UI",
     icon: IconKeys.radix,
   },
-
   {
-    title: "React Query",
-    icon: IconKeys.reactQuery,
+    title: "Storybook",
+    icon: IconKeys.storybook,
   },
   {
     title: "Vite",
     icon: IconKeys.vite,
-  },
-  {
-    title: "Zustand",
-    icon: IconKeys.zustand,
   },
 
   {
@@ -120,17 +172,47 @@ export const skills = [
     icon: IconKeys.shadcn,
   },
   {
+    title: "MySql",
+    icon: IconKeys.mysql,
+  },
+  {
+    title: "PostgreSql",
+    icon: IconKeys.postgresql,
+  },
+  {
     title: "Mongo Db",
     icon: IconKeys.mongodb,
   },
+  {
+    title: "Prisma",
+    icon: IconKeys.prisma,
+  },
+  {
+    title: "Jest",
+    icon: IconKeys.jest,
+  },
+  {
+    title: "Figma",
+    icon: IconKeys.figma,
+  },
+  {
+    title: "Sonarqube",
+    icon: IconKeys.sonarqube,
+  },
+  {
+    title: "Docker",
+    icon: IconKeys.docker,
+  },
+
 ];
 
 export const projects = [
   {
-    img: "../../../img/tasks-manager.webp",
+    img: "https://www.consultancy.eu/illustrations/news/spotlight/2023-04-14-073342938-Atos_lanceert_merk_van_spin-off_Eviden_spotlight.jpg",
     title: "Eviden-CRE",
-    link: "https://task-manager-ecru-chi.vercel.app/dashboard",
-    description: `Administrador de tareas con drag and drop autenticación con Clerk , shadcn.  "En Desarrollo "`,
+    link: "https://eviden.com/fr-fr/",
+    description: `Plateforme RH pour la gestion et le suivi des processus de
+ recrutement.`,
     technologies: [
       {
         icon: IconKeys.typeScript,
@@ -139,21 +221,33 @@ export const projects = [
         icon: IconKeys.nextjs,
       },
       {
+        icon: IconKeys.nestjs,
+      },
+      {
         icon: IconKeys.tailwind,
       },
       {
-        icon: IconKeys.zustand,
+        icon: IconKeys.figma,
       },
       {
-        icon: IconKeys.shadcn,
+        icon: IconKeys.prisma,
+      },
+      {
+        icon: IconKeys.postgresql,
+      },
+      {
+        icon: IconKeys.docker,
+      },
+      {
+        icon: IconKeys.git,
       },
     ],
   },
   {
-    img: "../../../img/ecommerce-stripe-2.webp",
+    img: "https://www.consultancy.eu/illustrations/news/spotlight/2023-04-14-073342938-Atos_lanceert_merk_van_spin-off_Eviden_spotlight.jpg",
     title: "Eviden-OnBoarding",
-    link: "https://ecommerce-stripe-763m.vercel.app/",
-    description: `Proyecto FullStack de un ecommerce con pasarela de pagos stripe integrada, destalles de el product etc.  `,
+    link: "https://eviden.com/fr-fr/",
+    description: `Plateforme pour faciliter l’intégration et l’accompagnement.  `,
     technologies: [
       {
         icon: IconKeys.typeScript,
@@ -162,81 +256,95 @@ export const projects = [
         icon: IconKeys.nextjs,
       },
       {
+        icon: IconKeys.nestjs,
+      },
+      {
         icon: IconKeys.tailwind,
       },
       {
-        icon: IconKeys.mongodb,
+        icon: IconKeys.figma,
       },
       {
-        icon: IconKeys.stripe,
+        icon: IconKeys.postgresql,
+      },
+      {
+        icon: IconKeys.storybook,
+      },
+      {
+        icon: IconKeys.prisma,
+      },
+      {
+        icon: IconKeys.docker,
+      },
+      {
+        icon: IconKeys.git,
       },
     ],
   },
   {
-    img: "../../../img/nexanime.webp",
-    title: "The Homies-Home",
-    link: "https://nexanime.vercel.app",
+    img: "https://www.vadesecure.com/hubfs/Vade%20Coud%20DKIM%20Authentification.jpeg",
+    title: "Vade-Cloud",
+    link: "https://www.vadesecure.com/fr/cloud-for-enterprise",
+    description: `solution de sécurité email, spécialisée dans la protection contre le phishing, les malwares et le spam`,
+    technologies: [
+      {
+        icon: IconKeys.vuejs,
+      },
+      {
+        icon: IconKeys.figma,
+      },
+      
+    ],
+  },
+  {
+    img: "../../../img/pagePrincipale.png",
+    title: "The Cocktail House",
+    link: "https://github.com/mohamedBenma/MyProjects/tree/main/The_Cocktail_House",
     description: ` Site de mode nouvelle génération : achetez en ligne comme jamais auparavant !`,
     technologies: [
       {
-        icon: IconKeys.typeScript,
+        icon: IconKeys.vuejs,
       },
       {
-        icon: IconKeys.nextjs,
-      },
-      {
-        icon: IconKeys.tailwind,
+        icon: IconKeys.figma,
       },
     ],
   },
   {
-    img: "../../../img/store-games.webp",
+    img: "../../../img/webmagic.png",
     title: "WebMagic",
-    link: "https://store-games-site.netlify.app/",
+    link: "",
     description: `Analyse, refactoring et résolution d'erreurs sur un projet open source de grande 
 envergure.`,
     technologies: [
       {
-        icon: IconKeys.react,
+        icon: IconKeys.sonarqube,
       },
       {
-        icon: IconKeys.css,
+        icon: IconKeys.docker,
       },
       {
         icon: IconKeys.javaScript,
       },
-      {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.reactQuery,
-      },
+      
     ],
   },
   {
     img: "../../../img/victory-quest.jpg",
     title: "Victory Quest",
-    link: "https://movietvsite.netlify.app/",
+    link: "https://github.com/mohamedBenma/MyProjects/tree/main/Sports_Competiton_Game",
     description: `Créez et gérez vos propres compétitions sportives avec ce jeu de simulation ! `,
     technologies: [
       {
-        icon: IconKeys.react,
+        icon: IconKeys.java,
       },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
+     
     ],
   },
   {
-    img: "../../../img/cyberpunk.webp",
+    img: "../../../img/sell_yours_app.jpg",
     title: "Sell Yours App",
-    link: "https://preeminent-liger-266356.netlify.app/",
+    link: "https://github.com/mohamedBenma/MyProjects/tree/main/Sell_Yours_App/application_name",
     description: `Plateforme d'échange d'objets : vendez et achetez facilement !.`,
     technologies: [
       {
@@ -248,72 +356,52 @@ envergure.`,
       {
         icon: IconKeys.javaScript,
       },
+      {
+        icon: IconKeys.nodejs,
+      },
+      {
+        icon: IconKeys.expressjs,
+      },
+      
     ],
   },
 
-  {
-    img: "../../../img/fit-nation.webp",
-    title: "gym",
-    link: "https://fitnation.netlify.app/",
-    description: `landing page de una gym por ahora es una landing todavia está en
-              desarrollo la idea es que los usuarios puedan comprar productos de
-              el gym`,
-    technologies: [
-      {
-        icon: IconKeys.react,
-      },
-      {
-        icon: IconKeys.css,
-      },
-      {
-        icon: IconKeys.javaScript,
-      },
-      {
-        icon: IconKeys.tailwind,
-      },
-    ],
-  },
+
   {
     img: "../../../img/pong-game.jpg",
     title: "Multiplayer-Pong",
-    link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
+    link: "https://github.com/mohamedBenma/MyProjects/tree/main/Pong",
     description: `Jeu "Pong" en version réseau simplifiée. `,
     technologies: [
-      {
-        icon: IconKeys.react,
-      },
       {
         icon: IconKeys.javaScript,
       },
       {
-        icon: IconKeys.tailwind,
-      },
-      {
-        icon: IconKeys.redux,
-      },
-      {
-        icon: IconKeys.reactQuery,
-      },
-    ],
-  },
-
-  {
-    img: "../../../img/netflix-clone.jpg",
-    title: "Netflix-Clone",
-    link: "https://realityvirtual.netlify.app/",
-    description: `Clone de Netflix : Une expérience de streaming réinventée. `,
-    technologies: [
-      {
-        icon: IconKeys.astro,
+        icon: IconKeys.html,
       },
       {
         icon: IconKeys.css,
       },
       {
-        icon: IconKeys.javaScript,
+        icon: IconKeys.nodejs,
       },
       {
-        icon: IconKeys.tailwind,
+        icon: IconKeys.expressjs,
+      },
+    ],
+  },
+
+  {
+    img: "../../../img/memoryGame1.png",
+    title: "Memory Game",
+    link: "https://github.com/mohamedBenma/MyProjects/tree/main/Memory_Game",
+    description: `Jeu de mémoire avec des cartes d'animaux, basé sur la découverte de paires identiques. `,
+    technologies: [
+      {
+        icon: IconKeys.react,
+      },
+      {
+        icon: IconKeys.css,
       },
     ],
   },

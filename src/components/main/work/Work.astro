@@ -1,13 +1,14 @@
 ---
-import { studies } from "../../../const/const";
+import { work } from "../../../const/const";
 ---
 
 <section class="section_studies">
   <div class="linear-grandient-1"></div>
   <div class="content_studies">
-    <h3 class="title-studies" id="studies">Études</h3>
+    <h3 class="title-studies" id="studies">Expériences Professionnelles
+    </h3>
     <ul class="ul-studies">
-      {studies.map(({ date, title, corporation, src }) => (
+      {work.map(({ date, title, corporation, src }) => (
         <li class="li-studies" >
           {src && (
             <img
