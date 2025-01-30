@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/main/main.astro",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738224551296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738224612964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,10 @@\n     display: flex;\r\n     height: 410px;\r\n     align-items: stretch;\r\n   }\r\n-  body{\r\n+  @media only screen and (max-width: 600px) {\r\n+  body {\r\n     width: min-content;\r\n   }\r\n+}\r\n </style>\r\n"
+                }
+            ],
+            "date": 1738224551296,
+            "name": "Commit-0",
+            "content": "---\r\nimport Projects from \"./projects/Projects.astro\";\r\nimport Studies from \"./studies/Studies.astro\";\r\nimport About from \"./about/About.astro\";\r\nimport Skills from \"./skills/Skills.astro\";\r\nimport Home from \"./home/Home.astro\";\r\nimport Work from \"./work/Work.astro\";\r\n\r\n---\r\n\r\n<main>\r\n  <div class=\"container_p\">\r\n    <Home />\r\n    <Projects />\r\n    <Skills />\r\n    <div class=\"test\">\r\n    <Studies />\r\n    <Work/>\r\n  </div>\r\n    <About />\r\n  </div>\r\n</main>\r\n\r\n<style>\r\n  .test{\r\n    display: flex;\r\n    height: 410px;\r\n    align-items: stretch;\r\n  }\r\n  body{\r\n    width: min-content;\r\n  }\r\n</style>\r\n"
+        }
+    ]
+}
